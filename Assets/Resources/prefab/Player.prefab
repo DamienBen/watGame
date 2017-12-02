@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4897154609889158}
   - component: {fileID: 20283569633507930}
   - component: {fileID: 124952014127556068}
-  - component: {fileID: 114838184635113790}
+  - component: {fileID: 114652075779535144}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -38,13 +38,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4148118643996790}
   - component: {fileID: 212275490133216510}
-  - component: {fileID: 114722945437029304}
   - component: {fileID: 54773729370995086}
   - component: {fileID: 65244548729045114}
   - component: {fileID: 65011846458190902}
   - component: {fileID: 81133850860691572}
-  - component: {fileID: 114267836640982096}
-  - component: {fileID: 114170723019361664}
+  - component: {fileID: 114357944722777832}
+  - component: {fileID: 114654422082910746}
+  - component: {fileID: 114452165798392150}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -58,14 +58,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1615357456231952}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.92, y: -0.909, z: 0.62}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 1.96, y: 0.17, z: 8.21}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4897154609889158}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4897154609889158
 Transform:
   m_ObjectHideFlags: 1
@@ -160,7 +160,7 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1615357456231952}
   m_Enabled: 1
---- !u!114 &114170723019361664
+--- !u!114 &114357944722777832
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -168,33 +168,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1615357456231952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b3d83360fba641969e195dc53afb1b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114267836640982096
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1615357456231952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bdb98baa57524b91b5699846db8e347, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114722945437029304
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1615357456231952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ea7a01336322464f83206c39ee9a23f, type: 3}
+  m_Script: {fileID: 11500000, guid: 93c9d6e4c5ab66f40aad7418bc20efab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
---- !u!114 &114838184635113790
+--- !u!114 &114452165798392150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1615357456231952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f93cd389a3a864c84881440ddc7b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114652075779535144
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -202,10 +191,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1068076140017726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 452ff20cf118c4ec2ba4babe05387f2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0dc47b90a155aaa4cb41e1b55fd4630f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1615357456231952}
+--- !u!114 &114654422082910746
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1615357456231952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a986b1a77a5ce4b8288b66c83cfe4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!124 &124952014127556068
 Behaviour:
   m_ObjectHideFlags: 1
