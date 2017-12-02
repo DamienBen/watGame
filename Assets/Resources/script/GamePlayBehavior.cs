@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class GamePlayBehavior : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+	public float brothel = 100;
+	public float maxBrothel = 100;
+	public  UnityEngine.UI.Image currentBH;
+
+	public void TakeDamage(float damage) {
+		brothel -= damage;
+		float ratio = brothel / maxBrothel;
+		currentBH.rectTransform.localScale = new Vector3 (ratio, 1, 1);
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		
+		TakeDamage(0.1f);
 	}
 }
