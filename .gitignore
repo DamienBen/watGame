@@ -1,5 +1,6 @@
 *.meta
 Temp
+Library/metadata
 Library/*
 *.sln
 .DS_Store
