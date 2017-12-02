@@ -8,6 +8,7 @@ public class GamePlayBehavior : MonoBehaviour {
 	public float maxBrothel = 100;
 	public  UnityEngine.UI.Image currentBH;
 	public GameObject[] dudes;
+	public static List<GameObject>allDudes = new List<GameObject>();
 
 	public void Start() {
 		InvokeRepeating("SpawnDude", 2.0f, 1.0f);
@@ -21,7 +22,8 @@ public class GamePlayBehavior : MonoBehaviour {
 
 	public void SpawnDude() {
 		GameObject randomDude = dudes[Random.Range(0, dudes.Length)];
-		Instantiate (randomDude, randomDude.transform.position, randomDude.transform.rotation);
+		GameObject dude = Instantiate (randomDude, randomDude.transform.position, randomDude.transform.rotation);
+		allDudes.Add (dude);
 	}
 		
 	void Update () {
