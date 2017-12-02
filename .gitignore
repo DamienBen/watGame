@@ -5,3 +5,4 @@ Library
 .DS_Store
 UnityPackageManager
 Assembly-CSharp.csproj
+*.csproj
