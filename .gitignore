@@ -1,6 +1,6 @@
 *.meta
 Temp
-Library
+Library/*
 *.sln
 .DS_Store
 UnityPackageManager

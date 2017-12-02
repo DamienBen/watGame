@@ -7,14 +7,24 @@ public class GamePlayBehavior : MonoBehaviour {
 	public float brothel = 100;
 	public float maxBrothel = 100;
 	public  UnityEngine.UI.Image currentBH;
+	public GameObject[] dudes;
 
-	public void TakeDamage(float damage) {
+	public void Start() {
+		InvokeRepeating("SpawnDude", 2.0f, 1.0f);
+	}
+
+	public void MakeNoise(float damage) {
 		brothel -= damage;
 		float ratio = brothel / maxBrothel;
 		currentBH.rectTransform.localScale = new Vector3 (ratio, 1, 1);
 	}
 
+	public void SpawnDude() {
+		GameObject randomDude = dudes[Random.Range(0, dudes.Length)];
+		Instantiate (randomDude, randomDude.transform.position, randomDude.transform.rotation);
+	}
+		
 	void Update () {
-		TakeDamage(0.1f);
+		MakeNoise(0.1f);
 	}
 }
