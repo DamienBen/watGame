@@ -1,1 +1,7 @@
 *.meta
+Temp
+Library
+*.sln
+.DS_Store
+UnityPackageManager
+Assembly-CSharp.csproj
