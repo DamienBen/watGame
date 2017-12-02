@@ -10,8 +10,8 @@ public class TensionReleaser : MonoBehaviour
 			renderer.color = new Color (0f, 1f, 0f, 1f);
 
 			if (Input.GetKey ("space")) {
-				Rage rage = col.gameObject.GetComponent<Rage> ();
-				rage.releaseTension ();
+				Degradation degradation = col.gameObject.GetComponent<Degradation> ();
+				degradation.reset ();
 			}
 		}
 	}
